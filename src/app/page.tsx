@@ -6,7 +6,7 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #003566f2 0%, #003566aa 60%, #00356666 100%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 py-24 w-full animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.05] tracking-tight max-w-3xl [text-wrap:balance]">Pass Your Driving Test First Time in Wicklow</h1>
-          <p className="text-xl md:text-2xl mb-10 opacity-95 max-w-2xl leading-relaxed [text-wrap:balance]">Expert instruction that builds confidence and gets results</p>
+          <p className="text-xl md:text-2xl mb-10 opacity-95 max-w-2xl leading-relaxed [text-wrap:balance]">Expert instruction that builds confidence on every road.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://wa.me/35345851867?text=Hi%2C%20I%27d%20like%20to%20book%20driving%20lessons" target="_blank" rel="noopener noreferrer" style={{ background: "#FFC300" }} className="text-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 hover:-translate-y-0.5 transition-all shadow-2xl inline-flex items-center justify-center gap-2">
               💬 WhatsApp Us
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">⭐ 5 (62 reviews)</div>
         <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">📍 Wicklow</div>
         <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">📞 (045) 851 867</div>
-        <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">✓ Locally trusted</div>
+        <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">🕐 Today: 8:00 AM – 5:30 PM</div>
         </div>
       </section>
 
@@ -42,23 +42,23 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
           <div className="text-3xl mb-4">🎯</div>
-          <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Beginner Driving Lessons</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Complete instruction from your first time behind the wheel to test-ready confidence</p>
+          <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Learner Lessons</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">Build confidence and master skills from your first lesson.</p>
         </div>
         <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
           <div className="text-3xl mb-4">⏱</div>
           <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Test Preparation</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Focused lessons tailored to your test route and examiner requirements</p>
+          <p className="text-gray-600 text-sm leading-relaxed">Intensive coaching to prepare you for your driving test.</p>
         </div>
         <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
           <div className="text-3xl mb-4">💡</div>
           <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Jeep & Trailer Training</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Specialist instruction for larger vehicles and trailer handling</p>
+          <p className="text-gray-600 text-sm leading-relaxed">Specialist instruction for heavier vehicles and trailer handling.</p>
         </div>
         <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
           <div className="text-3xl mb-4">🤝</div>
           <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Refresher Lessons</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Get back on the road safely with experienced guidance</p>
+          <p className="text-gray-600 text-sm leading-relaxed">Get back on the road with a confidence boost.</p>
         </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
       {/* Final CTA */}
       <section style={{ background: "#FFC300" }} className="py-20 px-4 text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Book your first lesson today and drive with confidence</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Book your first lesson with Peter today.</h2>
           <p className="text-lg mb-10 opacity-95">Tap WhatsApp and we'll get straight back to you.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://wa.me/35345851867?text=Hi%2C%20I%27d%20like%20to%20book%20driving%20lessons" target="_blank" rel="noopener noreferrer" className="bg-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition shadow-xl inline-flex items-center justify-center gap-2" style={{ color: "#FFC300" }}>

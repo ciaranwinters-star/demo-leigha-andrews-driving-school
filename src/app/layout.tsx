@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import "./globals.css"
 export const metadata: Metadata = {
-  title: "Driving Instructor Wicklow | Leigha Andrews Driving School",
-  description: "Professional driving instructor in Wicklow. Pass your test first time with expert tuition. 5-star rated lessons for beginners and test preparation.",
-  openGraph: { title: "Leigha Andrews Driving school", description: "Professional driving instructor in Wicklow. Pass your test first time with expert tuition. 5-star rated lessons for beginners and test preparation.", type: "website" },
+  title: "Driving Instructor Wicklow | Pass First Time",
+  description: "Expert driving lessons in Wicklow with Peter. Patient instruction, high first-time pass rates. Book your lesson today.",
+  openGraph: { title: "Leigha Andrews Driving school", description: "Expert driving lessons in Wicklow with Peter. Patient instruction, high first-time pass rates. Book your lesson today.", type: "website", images: [{ url: "https://demo-leigha-andrews-driving-school.vercel.app/images/photo_1.jpg", width: 1200, height: 630 }] },
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,6 +25,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main>{children}</main>
+        <a href="https://wa.me/35345851867?text=Hi%2C%20I%27d%20like%20to%20book%20driving%20lessons" target="_blank" rel="noopener noreferrer" className="md:hidden fixed bottom-5 right-5 z-50 rounded-full shadow-2xl px-5 py-4 font-bold text-white flex items-center gap-2" style={{ background: "#25D366" }}>
+          <span aria-hidden>💬</span> WhatsApp
+        </a>
         <footer style={{ background: "#003566" }} className="text-white py-12 mt-16">
           <div className="max-w-6xl mx-auto px-4 text-center text-sm opacity-80">
             <p className="font-bold text-base mb-1">Leigha Andrews Driving school</p>
