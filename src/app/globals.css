@@ -3,5 +3,8 @@
 @tailwind utilities;
 :root { --primary: #003566; --accent: #FFC300; --bg: #F9F9F9; }
 html { scroll-behavior: smooth; }
-body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); -webkit-font-smoothing: antialiased; }
 .hero-overlay { background: linear-gradient(135deg, #003566ee 0%, #00356699 100%); }
+@keyframes fade-in-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fade-in-up { animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both; }
+iframe { display: block; }
