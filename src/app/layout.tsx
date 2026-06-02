@@ -1,25 +1,26 @@
 import type { Metadata } from "next"
 import "./globals.css"
 export const metadata: Metadata = {
-  title: "Leigha Andrews Driving School | Wicklow Driving Instructor",
-  description: "Professional driving lessons in Wicklow. Pass first time with Peter. Learner lessons, test prep & trailer training. 5-star rated instructor.",
-  openGraph: { title: "Leigha Andrews Driving school", description: "Professional driving lessons in Wicklow. Pass first time with Peter. Learner lessons, test prep & trailer training. 5-star rated instructor.", type: "website" },
+  title: "Driving Lessons Wicklow | Pass First Time with Leigha Andrews",
+  description: "Expert driving instruction in Wicklow. 5-star rated lessons focused on building confidence. Pass your test first time with Peter.",
+  openGraph: { title: "Leigha Andrews Driving school", description: "Expert driving instruction in Wicklow. 5-star rated lessons focused on building confidence. Pass your test first time with Peter.", type: "website" },
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
         <header style={{ background: "#003566" }} className="text-white sticky top-0 z-50 shadow-lg">
-          <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
             <a href="/" className="text-xl font-bold tracking-tight">Leigha Andrews Driving school</a>
-            <nav className="hidden md:flex gap-8">
-          <a href="/" className="hover:text-[#FFC300] transition-colors font-medium text-sm">Home</a>
-          <a href="/about" className="hover:text-[#FFC300] transition-colors font-medium text-sm">About</a>
-          <a href="/services" className="hover:text-[#FFC300] transition-colors font-medium text-sm">Services</a>
-          <a href="/contact" className="hover:text-[#FFC300] transition-colors font-medium text-sm">Contact</a>
+            <nav className="hidden md:flex gap-6 items-center">
+              <a href="/" className="font-medium text-sm" style={{ color: "#FFC300" }}>Home</a>
+          <span className="opacity-50 cursor-default font-medium text-sm select-none">About</span>
+          <span className="opacity-50 cursor-default font-medium text-sm select-none">Services</span>
+          <span className="opacity-50 cursor-default font-medium text-sm select-none">Gallery</span>
+          <span className="opacity-50 cursor-default font-medium text-sm select-none">Contact</span>
             </nav>
-            <a href="tel:045851867" style={{ background: "#FFC300" }} className="text-white px-4 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition">
-              (045) 851 867
+            <a href="https://wa.me/35345851867?text=Hi%2C%20I%27d%20like%20to%20book%20driving%20lessons" target="_blank" rel="noopener noreferrer" style={{ background: "#FFC300" }} className="text-white px-4 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition whitespace-nowrap">
+              💬 WhatsApp
             </a>
           </div>
         </header>

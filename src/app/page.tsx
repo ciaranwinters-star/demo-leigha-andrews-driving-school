@@ -1,86 +1,110 @@
-"use client"
 export default function Home() {
   return (
     <>
-      <section style={{ backgroundImage: "url(/images/photo_1.jpg)", backgroundSize: "cover", backgroundPosition: "center" }} className="text-white py-28 px-4 relative">
-        <div className="hero-overlay absolute inset-0" />
-        <div className="relative max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Pass Your Driving Test First Time in Wicklow</h1>
-          <p className="text-xl mb-10 opacity-90">Professional instruction that builds confidence from day one.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:045851867" style={{ background: "#FFC300" }} className="text-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition shadow-lg">
-              📞 Call (045) 851 867
+      {/* Hero */}
+      <section style={{ backgroundImage: "url(/images/photo_1.jpg)", backgroundSize: "cover", backgroundPosition: "center" }} className="text-white relative flex items-center" style={{ minHeight: "85vh" }}>
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #003566f2 0%, #003566aa 60%, #00356666 100%)" }} />
+        <div className="relative max-w-5xl mx-auto px-4 py-24 w-full">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight max-w-3xl">Pass Your Driving Test First Time in Wicklow</h1>
+          <p className="text-xl md:text-2xl mb-10 opacity-95 max-w-2xl leading-relaxed">Expert instruction that builds real confidence on the road.</p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/35345851867?text=Hi%2C%20I%27d%20like%20to%20book%20driving%20lessons" target="_blank" rel="noopener noreferrer" style={{ background: "#FFC300" }} className="text-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition shadow-2xl inline-flex items-center justify-center gap-2">
+              💬 WhatsApp Us
             </a>
-            <a href="/contact" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-gray-900 transition">
-              Get a Free Quote
+            <a href="tel:045851867" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-gray-900 transition inline-flex items-center justify-center gap-2">
+              📞 (045) 851 867
             </a>
           </div>
-          <div className="mt-6 inline-flex items-center gap-2 bg-white bg-opacity-20 rounded-full px-4 py-2 text-sm">
-            <span className="text-yellow-300">★</span>
-            <span className="font-bold">5</span>
-            <span className="opacity-80">(62 Google reviews)</span>
-          </div>
+          <a href="https://search.google.com/local/reviews?placeid=ChIJoTDFs4KdZ0gRwyGMI9dOxMs" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-3 bg-white bg-opacity-15 backdrop-blur-sm rounded-full px-5 py-3 text-sm hover:bg-opacity-25 transition">
+            <span className="text-yellow-300 text-lg">★</span>
+            <span className="font-bold text-base">5</span>
+            <span className="opacity-90">62 reviews on Google</span>
+            <span className="opacity-70">→</span>
+          </a>
         </div>
       </section>
-      <section className="py-16 px-4" style={{ background: "#F9F9F9" }}>
+
+      {/* Trust band */}
+      <section className="bg-white border-b border-gray-100 py-6 px-4">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-x-8 gap-y-3 justify-center items-center">
+        <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">⭐ 5 (62 reviews)</div>
+        <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">📍 Wicklow</div>
+        <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">📞 (045) 851 867</div>
+        <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">✓ Locally trusted</div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-20 px-4" style={{ background: "#F9F9F9" }}>
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4" style={{ color: "#003566" }}>What We Offer</h2>
-          <p className="text-center text-gray-500 mb-12">Everything you need, right here in Wicklow</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="bg-white rounded-2xl shadow-md p-6 border-t-4 hover:shadow-lg transition" style={{ borderColor: "#FFC300" }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3" style={{ color: "#003566" }}>What we offer</h2>
+          <p className="text-center text-gray-500 mb-12">Built for Wicklow — clear, simple, dependable.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
+          <div className="text-3xl mb-4">🎯</div>
           <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Learner Lessons</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Structured driving tuition tailored to your pace and experience level.</p>
+          <p className="text-gray-600 text-sm leading-relaxed">Build confidence and master road skills with patient, one-on-one instruction.</p>
         </div>
-        <div className="bg-white rounded-2xl shadow-md p-6 border-t-4 hover:shadow-lg transition" style={{ borderColor: "#FFC300" }}>
+        <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
+          <div className="text-3xl mb-4">⏱</div>
           <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Test Preparation</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Intensive coaching to get you test-ready and confident on the road.</p>
+          <p className="text-gray-600 text-sm leading-relaxed">Focused lessons tailored to get you test-ready and fully prepared.</p>
         </div>
-        <div className="bg-white rounded-2xl shadow-md p-6 border-t-4 hover:shadow-lg transition" style={{ borderColor: "#FFC300" }}>
+        <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
+          <div className="text-3xl mb-4">💡</div>
           <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Jeep & Trailer Training</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Specialist instruction for larger vehicle and trailer handling.</p>
+          <p className="text-gray-600 text-sm leading-relaxed">Specialist instruction for HGV and trailer category tests.</p>
         </div>
-        <div className="bg-white rounded-2xl shadow-md p-6 border-t-4 hover:shadow-lg transition" style={{ borderColor: "#FFC300" }}>
-          <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Pass Plus Courses</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">Advanced driving skills development after you've passed your test.</p>
+        <div className="bg-white rounded-2xl shadow-md p-7 border-t-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style={{ borderColor: "#FFC300" }}>
+          <div className="text-3xl mb-4">🤝</div>
+          <h3 className="font-bold text-lg mb-2" style={{ color: "#003566" }}>Refresher Lessons</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">Get back on the road safely after a break from driving.</p>
         </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      {/* Real Google reviews */}
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4" style={{ color: "#003566" }}>What Our Customers Say</h2>
-          <p className="text-center text-gray-500 mb-12">Don't just take our word for it</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3" style={{ color: "#003566" }}>What our customers say</h2>
+          <p className="text-center text-gray-500 mb-12">Real reviews, straight from Google.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-white rounded-2xl shadow-md p-6">
-          <div className="text-yellow-400 text-xl mb-3">★★★★★</div>
-          <p className="text-gray-700 italic mb-4">"Never driven before my first lesson, passed first time. Peter was chill and brilliant."</p>
-          <p className="font-semibold text-sm" style={{ color: "#FFC300" }}>Caoimhe, Wicklow</p>
+        <div className="bg-white rounded-2xl shadow-md p-7 flex flex-col">
+          <div className="text-yellow-400 text-xl mb-3 tracking-wider">★★★★★</div>
+          <p className="text-gray-700 leading-relaxed mb-5 flex-grow">&ldquo;Would recommend Leigha Andrews driving school for the jeep and trailer test. Peter was a pleasure to deal with. He was calm and provided clear instructions at all times. He even went out of his way to&rdquo;</p>
+          <p className="font-semibold text-sm" style={{ color: "#FFC300" }}>— JR</p>
         </div>
-        <div className="bg-white rounded-2xl shadow-md p-6">
-          <div className="text-yellow-400 text-xl mb-3">★★★★★</div>
-          <p className="text-gray-700 italic mb-4">"Peter was professional, patient, and made everything easy to understand. Highly recommend."</p>
-          <p className="font-semibold text-sm" style={{ color: "#FFC300" }}>Stephen, Wicklow</p>
+        <div className="bg-white rounded-2xl shadow-md p-7 flex flex-col">
+          <div className="text-yellow-400 text-xl mb-3 tracking-wider">★★★★★</div>
+          <p className="text-gray-700 leading-relaxed mb-5 flex-grow">&ldquo;Such a great experience from start to finish. I’d never been behind the wheel before my first lesson and passed my test first time today! Massive thanks to Peter for teaching me and for being so chill&rdquo;</p>
+          <p className="font-semibold text-sm" style={{ color: "#FFC300" }}>— Caoimhe Mahon</p>
         </div>
-        <div className="bg-white rounded-2xl shadow-md p-6">
-          <div className="text-yellow-400 text-xl mb-3">★★★★★</div>
-          <p className="text-gray-700 italic mb-4">"Went the extra mile to help me prepare. Calm, clear instruction throughout. Brilliant."</p>
-          <p className="font-semibold text-sm" style={{ color: "#FFC300" }}>JR, Wicklow</p>
+        <div className="bg-white rounded-2xl shadow-md p-7 flex flex-col">
+          <div className="text-yellow-400 text-xl mb-3 tracking-wider">★★★★★</div>
+          <p className="text-gray-700 leading-relaxed mb-5 flex-grow">&ldquo;Great experience from start to finish! Peter was very professional, patient, and made everything easy to understand. I felt fully prepared for the driving test and passed on my first try. Highly recom&rdquo;</p>
+          <p className="font-semibold text-sm" style={{ color: "#FFC300" }}>— stephen callaghan</p>
         </div>
           </div>
+        <div className="text-center mt-10">
+          <a href="https://search.google.com/local/reviews?placeid=ChIJoTDFs4KdZ0gRwyGMI9dOxMs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-semibold hover:underline" style={{ color: "#003566" }}>
+            Read all 62 reviews on Google
+            <span aria-hidden>→</span>
+          </a>
+        </div>
         </div>
       </section>
-      <section style={{ background: "#FFC300" }} className="py-16 px-4 text-white text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Book your first lesson with Leigha Andrews today.</h2>
-          <p className="text-lg mb-8 opacity-90">Call us today or send a message and we'll get back to you fast.</p>
+
+      {/* Final CTA */}
+      <section style={{ background: "#FFC300" }} className="py-20 px-4 text-white text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Book your first lesson with Peter today.</h2>
+          <p className="text-lg mb-10 opacity-95">Tap WhatsApp and we'll get straight back to you.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:045851867" className="bg-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition" style={{ color: "#FFC300" }}>
-              📞 (045) 851 867
+            <a href="https://wa.me/35345851867?text=Hi%2C%20I%27d%20like%20to%20book%20driving%20lessons" target="_blank" rel="noopener noreferrer" className="bg-white px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition shadow-xl inline-flex items-center justify-center gap-2" style={{ color: "#FFC300" }}>
+              💬 WhatsApp Us
             </a>
-            <a href="/contact" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white transition">
-              Send a Message
-            </a>
+            <a href="tel:045851867" className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-gray-900 transition">📞 (045) 851 867</a>
           </div>
         </div>
       </section>
