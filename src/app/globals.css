@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --primary: #003566; --accent: #FFC300; --bg: #F9F9F9; }
+html { scroll-behavior: smooth; }
+body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); }
+.hero-overlay { background: linear-gradient(135deg, #003566ee 0%, #00356699 100%); }
