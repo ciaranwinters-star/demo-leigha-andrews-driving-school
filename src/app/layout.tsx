@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import "./globals.css"
 export const metadata: Metadata = {
-  title: "Driving Lessons Wicklow | Pass First Time with Leigha Andrews",
-  description: "Expert driving instruction in Wicklow. 5-star rated lessons focused on building confidence. Pass your test first time with Peter.",
-  openGraph: { title: "Leigha Andrews Driving school", description: "Expert driving instruction in Wicklow. 5-star rated lessons focused on building confidence. Pass your test first time with Peter.", type: "website" },
+  title: "Driving Lessons Wicklow | Pass First Time with Leigha",
+  description: "Expert driving lessons in Wicklow with proven first-time pass rates. Professional instruction from Peter. Book your lesson today.",
+  openGraph: { title: "Leigha Andrews Driving school", description: "Expert driving lessons in Wicklow with proven first-time pass rates. Professional instruction from Peter. Book your lesson today.", type: "website" },
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
